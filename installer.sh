@@ -11,8 +11,8 @@ if [[ $EUID -eq 0 ]]; then
   sudo mv jdk1.8.0_251/* $JAVA_HOME
   sudo wget https://raw.githubusercontent.com/hfabio/java-8-oracle-installer/master/jdk.sh -0 /etc/profile.d/jdk.sh
   sudo chmod 775 /etc/profile.d/jdk.sh
-  sudo ln -ls $JAVA_HOME/bin/java /usr/bin/java
-  sudo ln -ls $JAVA_HOME/bin/javac /usr/bin/javac
+  sudo ln -s $JAVA_HOME/bin/java /usr/bin/java
+  sudo ln -s $JAVA_HOME/bin/javac /usr/bin/javac
 
   clear
 
